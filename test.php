@@ -5,8 +5,8 @@ $sc = new \SendCloud\SendCloud();
 
 // 参数发送： 参数1为module名称, 参数2为action名称, 参数3为请求参数,它们将作为POST数据提交给接口
 /*$req = $sc->prepare('mail', 'send', array(
-	'apiUser'     => 'aso100',
-	'apiKey'      => 'BVwOWBZM07NJWJ3v',
+	'apiUser'     => '',
+	'apiKey'      => '',
     'from'        => '574630774@qq.com', # 发信人，用正确邮件地址替代
     'fromname'    => 'Shevy',
     'to'          => 'gaowei@qimai.net',# 收件人地址, 用正确邮件地址替代, 多个地址用';'分隔  
