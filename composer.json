@@ -1,5 +1,5 @@
 {
-    "name": "china-shevy/sendCloud-emailApiV2",
+    "name": "china-shevy/sendcloud-email-v2",
     "description": "SendCloud 邮件APIv2简易调用库",
     "keywords": ["sendcloud", "email"],
     "version": "0.3.0",
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "shevy",
-            "email": "574630774@qq.com"
+            "email": "huyao9950@gmail.com"
         }
     ],
     "require": {
