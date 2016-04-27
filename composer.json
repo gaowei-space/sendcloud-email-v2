@@ -1,13 +1,13 @@
 {
-    "name": "hsldymq/sendcloud-library",
-    "description": "SendCloud API简易调用库",
+    "name": "china-shevy/sendCloud-emailApiV2",
+    "description": "SendCloud 邮件APIv2简易调用库",
     "keywords": ["sendcloud", "email"],
-    "version": "0.2.0",
+    "version": "0.3.0",
     "license": "WTFPL",
     "authors": [
         {
-            "name": "Haibin Long",
-            "email": "26941471@qq.com"
+            "name": "shevy",
+            "email": "574630774@qq.com"
         }
     ],
     "require": {
