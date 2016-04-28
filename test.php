@@ -1,23 +1,33 @@
 <?php
-require './autoload.php';
+require 'vendor/autoload.php';
 
 $sc = new \SendCloud\SendCloud();
 
-// 参数发送： 参数1为module名称, 参数2为action名称, 参数3为请求参数,它们将作为POST数据提交给接口
-/*$req = $sc->prepare('mail', 'send', array(
-	'apiUser'     => '',
-	'apiKey'      => '',
-    'from'        => '574630774@qq.com', # 发信人，用正确邮件地址替代
-    'fromname'    => 'Shevy',
-    'to'          => 'gaowei@qimai.net',# 收件人地址, 用正确邮件地址替代, 多个地址用';'分隔  
-    'subject'     => '欢迎使用ASO100',
-    'html'        => '欢迎使用ASO100，完善信息有奖励噢！<a href="http://aso100.com">去完善>></a>',
+// SEND1(普通发送): 参数1为module名称, 参数2为action名称, 参数3为请求参数
+$req = $sc->prepare('mail', 'send', array(
+    'apiUser'     => '',
+    'apiKey'      => '',
+    'from'        => '', # 发信人，用正确邮件地址替代
+    'fromName'    => '来自***的一份信',
+    'to'          => '***@qq.com;***@163.com',# 收件人地址, 用正确邮件地址替代, 多个地址用';'分隔
+    'subject'     => '欢迎使用****',
+    'html'        => '<p>欢迎使用****</p>',
     'respEmailId' => 'true'
-));*/
+));
+// SEND2(模板发送): 参数1为module名称, 参数2为action名称, 参数3为请求参数
+/*$req = $sc->prepare('mail', 'sendtemplate', [
+    'apiUser'   	 => '',
+    'apiKey'    	 => '',
+    'from'               => '',
+    'fromName'           => '来自***的一份信',
+    'subject'            => '来自***的一份信',
+    'respEmailId'        => 'true',
+    'templateInvokeName' => 'version_v2',
+    'xsmtpapi'           => '{"to": ["***@qq.com"],"sub":{"%username%": ["name"],"%link%":["http://qq.com"]}}'
+]);*/
 
-// 自定义模板发送
-// $req = $sc->prepare('mail', 'sendtemplate', 'verifycode'); # 模板发送
-$req = $sc->prepare('mail', 'send', 'welcomeBatch'); # 普通发送，地址列表发送
+// SEND3(自定义模板发送): 参数1为module名称, 参数2为action名称, 参数3为模板名称
+// $req = $sc->prepare('mail', 'sendtemplate', 'verifycode');
 
 $data = $req->send();       // 提交API调用请求,返回数据
 echo "<pre>";
