@@ -34,11 +34,11 @@
 
 return [
 	'verifycode' => [
-		'from'               => 'Shevy<574630774@qq.com>', # 发信人，用正确邮件地址替代
-		'fromName'           => '来自ASO100的一份信',
-		'subject'            => '来自ASO100的一份信',
+		'from'               => 'YOURNAME<***@qq.com>', # 发信人，用正确邮件地址替代
+		'fromName'           => '来自***的一份信',
+		'subject'            => '来自***的一份信',
 		'respEmailId'        => 'true',      // ('true'|'false')
 		'templateInvokeName' => 'verifycode',
-		'xsmtpapi'           => '{"to": ["gaowei@qimai.net", "18600686927@163.com"],"sub":{"%name%": ["shevy1", "shevy2"],"%verifycode%":[288231, 497232]}}'
+		'xsmtpapi'           => '{"to": ["***@qq.com", "***@163.com"],"sub":{"%name%": ["name1", "name2"],"%verifycode%":[288231, 497232]}}'
 	],
  ];
