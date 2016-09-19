@@ -54,7 +54,7 @@ require 'vendor/autoload.php';
 使用git安装的朋友,可以使用库根目录下的autoload.php:
 
 ```php
-require 'SendCloud-Library/autoload.php';
+require 'sendcloud-email-v2/autoload.php';
 ```
 
 ###开始使用
