@@ -1,5 +1,7 @@
 # SendCloud-Library
 
+该项目已不推荐使用，如有需要，请使用下载官方SDK：https://www.sendcloud.net/doc/sdk/php/
+
 ## 1.简介
 SOHU SendCloud Email API V2 的调用库
 Forked:https://github.com/hsldymq/SendCloud-Library
@@ -11,17 +13,9 @@ Forked:https://github.com/hsldymq/SendCloud-Library
 
 ## 2.要求
 #### PHP版本: >= 5.3
-
 #### PHP安装curl扩展
 
 ## 3.安装
-有两种方法将它集成到你自己的项目:
-
-#### 1. composer
 ```
 composer require china-shevy/sendcloud-email-v2
 ```
-
-#### 2. git
-git clone https://github.com/china-shevy/sendcloud-email-v2.git
-
