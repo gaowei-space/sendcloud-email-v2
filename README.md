@@ -1,6 +1,6 @@
 # SendCloud-Library
 
-该项目已不推荐使用，如有需要，请使用下载官方SDK：https://www.sendcloud.net/doc/sdk/php/
+该项目已不推荐使用，如有需要，请下载官方SDK：https://www.sendcloud.net/doc/sdk/php/
 
 ## 1.简介
 SOHU SendCloud Email API V2 的调用库
